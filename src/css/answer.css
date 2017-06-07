@@ -1,0 +1,691 @@
+body,
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+input,
+fieldset,
+table,
+td,
+img,
+div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+/*input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+}*/
+
+body {
+    width: 100%;
+    height: auto;
+    font-family: 'Microsoft YaHei';
+    background: url('../img/bg-line.png')151px 108px no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.display-none {
+    display: none!important;
+}
+
+
+/*start*/
+
+html {
+    background-color: #3da5fc;
+}
+
+.main-area {
+    width: 100%;
+    height: auto;
+    background: url('../img/bgshape.png')no-repeat;
+    background-size: cover;
+    /*margin: 116px 229px 168px 228px;*/
+    margin:  10%;
+    
+    position: relative;
+}
+
+.fish-icon {
+    position: absolute;
+}
+
+.fish-icon-tl {
+    top: 29px;
+    left: -145px;
+}
+
+.fish-icon-tr {
+    top: -63px;
+    right: -149px;
+}
+
+.fish-icon-bl {
+    left: -193px;
+    bottom: -65px;
+}
+
+.fish-icon-rb {
+    right: -212px;
+    bottom: -124px;
+}
+
+
+/*基本信息 header*/
+
+.basic-info-area {
+    position: relative;
+    width: 100%;
+}
+
+.logo-area img {
+    position: absolute;
+    top: 29px;
+    left: 48px;
+}
+
+.bas-info-tit {
+    font-size: 40px;
+    color: #468ccb;
+    text-align: center;
+    padding-top: 69px;
+}
+
+.bas-info-tit>span {
+    display: inline-block;
+}
+
+.start-answ-text {
+    width: 250px;
+    background: url('../img/redflag.png')0 8px no-repeat;
+}
+
+.err-answ-text {
+    width: 450px;
+    padding-left: 100px;
+    background: url('../img/cry-icon.png')55px -7px no-repeat;
+}
+
+.bas-info-text,
+.answ-info-text {
+    font-size: 18px;
+    color: #666;
+    text-align: center;
+    padding-top: 23px;
+}
+
+.true-option-text {
+    font-size: 20px;
+    color: #ff3c3c;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.score-answ-number {
+    font-size: 72px;
+    color: #f84e4e;
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+.score-answ-number>img:first-child {
+    position: absolute;
+    top: 0;
+    left: 42%;
+    margin-left: -60px;
+
+}
+
+.score-answ-number>img:last-child {
+    position: absolute;
+    top: 6px;
+    left: 50%;
+    margin-left: 72px;
+}
+
+
+/*middle*/
+
+
+/*选择身份*/
+
+.m-user-sel {
+    text-align: center;
+    margin-top: 107px;
+    padding-bottom: 222px;
+}
+
+.m-user-sel::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.m-user-sel ul {
+    float: left;
+    position: relative;
+    left: 50%;
+    top: 0;
+    margin-left: -275px;
+}
+
+.m-user-sel ul::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.m-user-sel>ul>li {
+    display: inline-block;
+    float: left;
+    width: 245px;
+    height: 107px;
+    line-height: 107px;
+    background-color: #5fb6ff;
+    text-align: left;
+    position: relative;
+    cursor: pointer;
+}
+
+.m-user-sel ul li:first-child {
+    margin-right: 60px;
+}
+
+.sel-student>span,
+.sel-pub-people span {
+    height: 100%;
+    font-size: 24px;
+    color: #fff;
+    display: inline-block;
+    float: left;
+}
+
+.sel-student>span:first-child,
+.sel-pub-people>span:first-child {
+    margin: 0 12px 0 54px;
+}
+
+.sel-student>span:first-child img,
+.sel-pub-people>span:first-child img {
+    vertical-align: middle;
+}
+
+.sel-pub-people {
+    opacity: .7;
+}
+
+.click-icon {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    width: 21px;
+    height: 21px;
+    background-color: #5fb6ff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    /*background: url('../img/cancel-icon.png')3px 6px no-repeat;*/
+}
+
+.click-icon i {
+    display: inline-block;
+    border: 2px solid #fff;
+    border-top-width: 0;
+    border-right-width: 0;
+    width: 13px;
+    height: 8px;
+    -webkit-transform: rotate(-40deg);
+    position: absolute;
+    left: 3px;
+    top: 4px;
+}
+
+
+/*填写学生、公众信息*/
+
+.m-student-area {
+    text-align: center;
+    margin-top: 38px;
+    padding-bottom: 66px;
+}
+
+.m-public-area {
+    text-align: center;
+    margin-top: 75px;
+    padding-bottom: 100px;
+}
+
+.m-student-area>div,
+.m-public-area>div {
+    position: relative;
+    height: 48px;
+    margin-bottom: 23px;
+}
+
+.m-student-area>div:last-child,
+.m-public-area>div:last-child {
+    margin-bottom: 0;
+}
+
+.m-student-area>div::after,
+.m-public-area>div::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.m-student-area>div>span,
+.m-public-area>div>span {
+    display: inline-block;
+    width: 100px;
+    height: auto;
+    font-size: 18px;
+    color: #666;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -293.5px;
+    margin-top: -12px;
+}
+
+.m-student-area>div>input,
+.m-student-area>div>div,
+.m-public-area>div>input,
+.m-public-area>div>div {
+    display: inline-block;
+    float: left;
+    width: 374px;
+    height: 44px;
+    font-size: 22px;
+    line-height: 22px;
+    border: 1px solid #cecece;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -193.5px;
+    padding-left: 10px;
+}
+
+.m-student-area>div>div,
+.m-public-area>div>div {
+    width: 375px;
+    height: 46px;
+    line-height: 46px;
+    text-align: left;
+}
+
+.m-student-area>div>div>span,
+.m-public-area>div>div>span {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.stuG-cov-div,
+.stuCity-cov-div,
+.college-cov-div,
+.pubCity-cov-div,
+.pubGrade-cov-div {
+    position: relative;
+}
+
+.stuGrade-sel-ul,
+.stuCity-sel-ul,
+.college-sel-ul,
+.pubCity-sel-ul,
+.pubGrade-sel-ul {
+    width: 387px;
+    height: auto;
+    overflow: auto;
+    margin-left: -1px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 200;
+    cursor: pointer;
+}
+
+.stuGrade-sel-ul {
+    height: 138px;
+}
+
+.stuCity-sel-ul,
+.college-sel-ul,
+.pubCity-sel-ul {
+    height: 230px;
+}
+
+.pubGrade-sel-ul {
+    height: 184px;
+}
+
+.stuGrade-sel-ul>li,
+.stuCity-sel-ul>li,
+.college-sel-ul>li,
+.pubCity-sel-ul>li,
+.pubGrade-sel-ul>li {
+    width: 100%;
+    text-align: center;
+    background: #ccc;
+    cursor: pointer;
+}
+
+.ipt-slider-icon {
+    display: inline-block;
+    float: right;
+    margin-right: 18px;
+}
+
+
+/*答题 选题 区*/
+
+.m-answer-sel-area {
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.answer-tit-area {
+    margin-top: 49px;
+    text-align: center;
+}
+
+.single-more-tit {
+    font-size: 30px;
+    color: #333333;
+}
+
+.topic-num-area {
+    display: inline-block;
+    padding-left: 10px;
+    font-size: 17px;
+    color: #999;
+}
+
+.topic-num-area .topic-now {
+    display: inline-block;
+    width: 15px;
+    text-align: center;
+    padding: 0 3px;
+}
+
+.select-area {
+    margin-top: 40px;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+}
+
+.select-area-title {
+    margin-bottom: 35px;
+}
+
+.sel-area-ul {
+    position: relative;
+    left: 50%;
+    top: 0;
+    margin-left: -130px;
+}
+
+.sel-area-ul>li {
+    margin-bottom: 35px;
+}
+
+.sel-area-ul>li::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.sel-area-ul>li:last-child {
+    margin-bottom: 0;
+}
+
+.sel-area-ul>li>span {
+    display: inline-block;
+    float: left;
+    vertical-align: middle;
+}
+
+.sel-area-ul>li>span>input {
+    width: 16px;
+    height: 16px;
+    margin-right: 12px;
+    position: relative;
+    top: 2px;
+    left: 0;
+}
+
+.sel-radio {
+    -webkit-appearance: none;
+    height: 13px;
+    width: 13px;
+    background-color: #fff;
+    box-shadow: 0 0 1px #333;
+    border-radius: 10px;
+    outline: none;
+    /*似乎谷歌浏览器还有一个蓝色的outline影响，于是去掉*/
+}
+
+.sel-radio:checked {
+    background-color: #3da5fc;
+    border: 3px solid #fff;
+    box-shadow: 0 0 4px #3da5fc;
+}
+
+.sel-area-ul .sel-checkbox {
+    top: 6px;
+}
+
+
+/*低于60分*/
+
+.score-answ-number {
+    margin-bottom: 20px
+}
+
+.score-text-area {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.score-text-area>span {
+    display: inline-block;
+    position: relative;
+    left: 4px;
+    top: -20px;
+}
+
+.more-score {
+    margin-bottom: 0;
+}
+
+.more-score>span {
+    top: -30px;
+}
+
+.raffle-area {
+    width: 540px;
+    height: 130px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    overflow: hidden;
+    position: relative;
+}
+
+.raffle-area>span:first-child {
+    display: inline-block;
+    width: 540px;
+    height: 130px;
+    background-color: #fff;
+}
+
+.try-again-icon>img {
+    position: relative;
+    left: 50%;
+    top: 0;
+    margin-left: -161.5px;
+    margin-bottom: 170px;
+}
+
+
+/*高于60分 抽奖*/
+
+
+/*格子背景*/
+
+.raffle-area>img {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -270px;
+}
+
+
+/*谢谢参与 点击抽奖 白*/
+
+.raffle-click,
+.no-prize {
+    font-size: 32px;
+    color: #313131;
+    width: 526px;
+    height: 116px;
+    line-height: 120px;
+    background-color: #f7fafd;
+    text-align: center;
+    position: absolute;
+    top: 7px;
+    left: 50%;
+    margin-left: -263px;
+    border-radius: 8px;
+}
+
+.no-prize {
+    background-color: #fff;
+}
+
+
+/*100M流量*/
+
+.prize-icon {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin-left: -270px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.prize-icon>span:first-child {
+    display: inline-block;
+    float: left;
+    font-size: 32px;
+    text-align: center;
+    color: #fff;
+    width: 199px;
+    height: 130px;
+    line-height: 130px;
+    background: url('../img/prize-l.png')no-repeat;
+}
+
+.prize-icon>span:last-child {
+    display: inline-block;
+    float: left;
+    font-size: 32px;
+    text-align: center;
+    color: #3da5fc;
+    width: 341px;
+    height: 130px;
+    line-height: 130px;
+    background: url('../img/prize-r.png')no-repeat;
+}
+
+
+/*点击抽奖*/
+
+.raffle-click {
+    transition: opacity 1s ease;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+
+/*刮奖背景*/
+
+.raffle-area>img {
+    transition: left 3s ease;
+    z-index: 800;
+}
+
+
+/*流量图*/
+
+.prize-icon {
+    z-index: 700;
+}
+
+
+/*谢谢参与*/
+
+.no-prize {
+    z-index: 600;
+}
+
+.prize-info-btm {
+    width: 100%;
+    height: 28px;
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+/*foot btn*/
+
+.f-btn-area {
+    text-align: center;
+    padding-bottom: 55px;
+}
+
+.start-btn {
+    width: 295px;
+    height: 85px;
+    line-height: 85px;
+    margin: 0 auto;
+    font-size: 36px;
+    color: #744620;
+    text-align: center;
+    background: url('../img/startBtnBg.png')no-repeat;
+    cursor: pointer;
+}
