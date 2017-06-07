@@ -1,1 +1,0 @@
-function test(){}test.prototype={name:"cc",age:function(t){console.log(t)}};var go=new test;

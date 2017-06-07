@@ -6,7 +6,7 @@ var cssMin = require('gulp-css');
 gulp.task('script',function(){
     return gulp.src('src/js/**/*.js')
     .pipe(uglify())
-    .pipe(gulp.dest('./dist'));
+    .pipe(gulp.dest('./dist/js'));
 });
 // 压缩js代码
 
@@ -17,7 +17,7 @@ gulp.task('css',function(){
         cascade:false
     }))
     .pipe(cssMin()) //压缩css代码
-    .pipe(gulp.dest('./dist'));
+    .pipe(gulp.dest('./dist/css'));
 });
 
 gulp.task('default',['script','css'],function(){
